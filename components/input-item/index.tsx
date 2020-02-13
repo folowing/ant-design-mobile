@@ -71,7 +71,7 @@ class InputItem extends React.Component<InputItemProps, any> {
     };
   }
 
-  componentWillReceiveProps(nextProps: InputItemProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: InputItemProps) {
     if ('placeholder' in nextProps && !nextProps.updatePlaceholder) {
       this.setState({
         placeholder: nextProps.placeholder,

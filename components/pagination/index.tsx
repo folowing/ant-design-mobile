@@ -35,7 +35,7 @@ export default class Pagination extends React.Component<
     };
   }
 
-  componentWillReceiveProps(nextProps: PaginationProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: PaginationProps) {
     if (nextProps.current !== this.state.current) {
       this.setState({
         current: nextProps.current,

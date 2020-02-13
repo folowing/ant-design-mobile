@@ -78,7 +78,7 @@ class NumberInput extends React.Component<NumberInputProps, any> {
     this.props.onVirtualKeyboardConfirm!(value);
   }
 
-  componentWillReceiveProps(nextProps: NumberInputProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: NumberInputProps) {
     if ('value' in nextProps) {
       this.setState({
         value: nextProps.value,

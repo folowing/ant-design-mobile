@@ -31,7 +31,7 @@ export default class SegmentedControl extends React.Component<
     };
   }
 
-  componentWillReceiveProps(nextProps: SegmentedControlProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: SegmentedControlProps) {
     if (nextProps.selectedIndex !== this.state.selectedIndex) {
       this.setState({
         selectedIndex: nextProps.selectedIndex,

@@ -80,7 +80,7 @@ export default class TextareaItem extends React.Component<
     this.textareaRef.focus();
   }
 
-  componentWillReceiveProps(nextProps: TextareaItemProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: TextareaItemProps) {
     if ('value' in nextProps) {
       this.setState({
         value: fixControlledValue(nextProps.value),

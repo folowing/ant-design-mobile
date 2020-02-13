@@ -21,7 +21,7 @@ export default class Progress extends React.Component<ProgressProps, any> {
   barRef: HTMLDivElement | null;
   private noAppearTransition: boolean;
 
-  componentWillReceiveProps() {
+  UNSAFE_componentWillReceiveProps() {
     this.noAppearTransition = true;
   }
   componentDidMount() {

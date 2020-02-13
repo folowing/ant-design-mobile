@@ -101,7 +101,7 @@ export default class SearchBar extends React.Component<
     }
   }
 
-  componentWillReceiveProps(nextProps: SearchBarProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: SearchBarProps) {
     if ('value' in nextProps && nextProps.value !== this.state.value) {
       this.setState({
         value: nextProps.value,

@@ -43,7 +43,7 @@ export default class Menu extends React.Component<MenuProps, StateType> {
     };
   }
 
-  componentWillReceiveProps(nextProps: MenuProps) {
+  UNSAFE_componentWillReceiveProps(nextProps: MenuProps) {
     if (nextProps.value !== this.props.value) {
       this.setState({
         firstLevelSelectValue: this.getNewFsv(nextProps),
